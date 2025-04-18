@@ -1,0 +1,5 @@
+name: TablessPlus
+version: '1.0-SNAPSHOT'
+main: com.notkirb.tablessPlus.TablessPlus
+api-version: '1.21'
+require: [ ProtocolLib ]
