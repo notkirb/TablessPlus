@@ -21,16 +21,19 @@ import org.eclipse.sisu.space.asm.Handle
 
 class TablessPlus : JavaPlugin(), Listener {
 
-    val tabMessageConfig = config.getString("text")!!
-    val tabMessage = MiniMessage.miniMessage().deserialize(tabMessageConfig)
-    val adventureJson = GsonComponentSerializer.gson().serialize(tabMessage)
-
     override fun onEnable() {
+
+        saveDefaultConfig()
+
         server.pluginManager.registerEvents(this, this)
 
         if (!config.getBoolean("enabled"))  {
             server.pluginManager.disablePlugin(this)
         }
+
+        val tabMessageConfig = config.getString("text")!!
+        val tabMessage = MiniMessage.miniMessage().deserialize(tabMessageConfig)
+        val adventureJson = GsonComponentSerializer.gson().serialize(tabMessage)
 
         val protocolManager: ProtocolManager = ProtocolLibrary.getProtocolManager()
 
