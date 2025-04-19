@@ -1,5 +1,7 @@
 > [!WARNING]  
 > this does not work at all, please dont use it
+> 
+> as an alternative, you can tell your players to unbind the player list key.
 
 # TablessPlus
 
