@@ -1,3 +1,6 @@
+> [!WARNING]  
+> this does not work at all, please dont use it
+
 # TablessPlus
 
 TablessPlus removes the player list from servers. Don't want players to see who else is online? This is the perfect plugin for you!
